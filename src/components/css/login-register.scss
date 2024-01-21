@@ -1,0 +1,229 @@
+@import url(https://db.onlinewebfonts.com/c/fd33d5c7a5d5f34c2a7e0fec0af20b8d?family=PNU+Medium);
+@mixin fonts(){
+    font-family: "PNU Medium";
+    src: url("https://db.onlinewebfonts.com/t/fd33d5c7a5d5f34c2a7e0fec0af20b8d.eot");
+    src: url("https://db.onlinewebfonts.com/t/fd33d5c7a5d5f34c2a7e0fec0af20b8d.eot?#iefix")format("embedded-opentype"),
+    url("https://db.onlinewebfonts.com/t/fd33d5c7a5d5f34c2a7e0fec0af20b8d.woff2")format("woff2"),
+    url("https://db.onlinewebfonts.com/t/fd33d5c7a5d5f34c2a7e0fec0af20b8d.woff")format("woff"),
+    url("https://db.onlinewebfonts.com/t/fd33d5c7a5d5f34c2a7e0fec0af20b8d.ttf")format("truetype"),
+    url("https://db.onlinewebfonts.com/t/fd33d5c7a5d5f34c2a7e0fec0af20b8d.svg#PNU Medium")format("svg");
+}
+
+h1 , h2 , h3 , span , div {
+  @include fonts();
+}
+.sign-in {
+  min-height: 100vh;
+  background-size: cover;
+  transition: 1s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .box {
+    position: relative;
+    width: 380px;
+    height: 440px;
+    background: #1c1c1c;
+    border-radius: 10px;
+    overflow: hidden;
+    &.register{
+      height: 520px;
+    }
+    .login{
+      color: rgb(196, 241, 223);
+      font-weight: bold;
+      &:hover{
+       color: rgb(83, 230, 168);
+       scale: 1.1;
+       transition: 0.5s;
+       -webkit-transition: 0.5s;
+       -moz-transition: 0.5s;
+       -ms-transition: 0.5s;
+       -o-transition: 0.5s;
+      
+}
+
+    }
+    .register{
+      color: rgb(196, 241, 223);
+      font-weight: bold;
+      &:hover{
+        color: rgb(83, 230, 168);
+        scale: 1.1;
+        transition: 0.5s;
+        -webkit-transition: 0.5s;
+        -moz-transition: 0.5s;
+        -ms-transition: 0.5s;
+        -o-transition: 0.5s;
+        letter-spacing: 5;
+ }
+
+ 
+    }
+    .login-with-google{
+      color: rgb(196, 241, 223);
+      font-weight: bold;
+      &:hover{
+        color: rgb(83, 230, 168);
+        scale: 1.1;
+        transition: 0.5s;
+        -webkit-transition: 0.5s;
+        -moz-transition: 0.5s;
+        -ms-transition: 0.5s;
+        -o-transition: 0.5s;
+        letter-spacing: 5;
+    }
+     }
+    
+    &::before {
+      content: "";
+      position: absolute;
+      top: -50%;
+      left: -50%;
+      width: 380px;
+      height: 420px;
+      background: linear-gradient(        0deg,        transparent,        transparent,        #45f3ff,        #45f3ff,        #45f3ff      );
+      z-index: 1;
+      transform-origin: bottom right;
+      animation: animate 6s linear infinite;
+      -webkit-animation: animate 6s linear infinite;
+      -moz-animation: animate 6s linear infinite;
+      -o-animation: animate 6s linear infinite;
+}
+    &::after {
+      content: "";
+      position: absolute;
+      top: -50%;
+      left: -50%;
+      width: 380px;
+      height: 420px;
+      background: linear-gradient(
+        0deg,
+        transparent,
+        transparent,
+        #45f3ff,
+        #45f3ff,
+        #45f3ff
+      );
+      z-index: 1;
+      transform-origin: bottom right;
+      animation: animate 6s linear infinite;
+      animation-delay: -3s;
+      -webkit-animation: animate 6s linear infinite;
+      -webkit-animation-delay: -3s;
+      -moz-animation: animate 6s linear infinite;
+      -moz-animation-delay:-3s ;
+      -o-animation: animate 6s linear infinite;
+      -o-animation-delay:-3s ;
+    }
+    .form {
+      background: #23242a;
+
+      position: absolute;
+      inset: 4px;
+      border-radius: 10px;
+      z-index: 2;
+    }
+    .border-line {
+      position: absolute;
+      top: 0;
+      inset: 0;
+      &::before {
+        content: "";
+        position: absolute;
+        top: -50%;
+        left: -50%;
+        width: 380px;
+        height: 420px;
+        background: linear-gradient(
+          0deg,
+          transparent,
+          transparent,
+          #ff2770,
+          #ff2770,
+          #ff2770
+        );
+        z-index: 1;
+        transform-origin: bottom right;
+        animation: animate 6s linear infinite;
+        animation-delay: -1.5s;
+        -webkit-animation: animate 6s linear infinite;
+        -webkit-animation-delay: -1.5s;
+        -moz-animation: animate 6s linear infinite;
+        -moz-animation-delay: -1.5s;
+        -o-animation: animate 6s linear infinite;
+        -o-animation-delay: -1.5s;
+      }
+      &::after {
+        content: "";
+        position: absolute;
+        top: -50%;
+        left: -50%;
+        width: 380px;
+        height: 420px;
+        background: linear-gradient(
+          0deg,
+          transparent,
+          transparent,
+          #ff2770,
+          #ff2770,
+          #ff2770
+        );
+        z-index: 1;
+        transform-origin: bottom right;
+        animation: animate 6s linear infinite;
+        animation-delay: -4.5s;
+        -webkit-animation: animate 6s linear infinite;
+        -webkit-animation-delay: -4.5s;
+        -moz-animation: animate 6s linear infinite;
+       -moz-animation-delay: -4.5s;
+       -o-animation: animate 6s linear infinite;
+       -o-animation-delay: -4.5s;
+      }
+    }
+  }
+}
+@keyframes animate {
+  0% {
+    rotate: 0deg;
+  }
+  100% {
+    rotate: 360deg;
+  }
+}
+@-webkit-keyframes animate{
+  0% {
+    rotate: 0deg;
+    -webkit-transform:rotate(0deg);
+  }
+  100% {
+    -webkit-transform:rotate(360deg);
+    rotate: 360deg;
+
+  }
+}
+@-moz-keyframes animate{
+  0%{
+    rotate: 0deg;
+    -moz-transform:rotate(0deg);
+  }
+ 
+  100% {
+    -moz-transform:rotate(360deg);
+    rotate: 360deg;
+
+  }
+
+}
+@-o-keyframes animate{
+  0%{
+    rotate: 0deg;
+    -o-transform:rotate(0deg);
+  }
+ 
+  100% {
+    -o-transform:rotate(360deg);
+    rotate: 360deg;
+
+  }
+}
