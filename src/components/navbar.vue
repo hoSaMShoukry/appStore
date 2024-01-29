@@ -28,7 +28,14 @@
       <v-list>
         <v-list-item>
           <v-list-item-title>
-            <v-icon @click="redirectToAll()" style="cursor: pointer;" class="mr-0" v-if="$route.path !='/products/all'">mdi-store</v-icon>
+            <v-icon @click="redirectToAll()" style="cursor: pointer;" class="mr-0" 
+            :class="$route.path =='/products/all' 
+        || $route.path == '/products/jewellry'
+        || $route.path == '/products/mens%20clothing' 
+        || $route.path == '/products/women%20clothing' 
+        || $route.path == '/products/electronics'
+        ?   'd-none' : ''"
+            >mdi-store</v-icon>
           </v-list-item-title>
           <v-list-item-title>
             <v-icon
@@ -41,12 +48,20 @@
         style="z-index: 999;" @click="drawer = !drawer">mdi-filter</v-icon>
           </v-list-item-title>
           <v-list-item-title class="mt-3">
-            <v-icon style="cursor: pointer;">mdi-cart-arrow-right</v-icon>
+            <v-icon style="cursor: pointer;" @click="$router.push('/card')">mdi-cart-arrow-right</v-icon>
+            <span class="text-red font-weight-bold mr-1">{{ cardCount.length }}</span>
           </v-list-item-title>
         </v-list-item>
       </v-list>
     </v-menu>
-        <v-icon @click="redirectToAll()" style="cursor: pointer;" class="mr-0 store-icon" v-if="$route.path !='/products/all'">mdi-store</v-icon>
+        <v-icon @click="redirectToAll()" style="cursor: pointer;" class="mr-0 store-icon" 
+        :class="$route.path =='/products/all' 
+        || $route.path == '/products/jewellry'
+        || $route.path == '/products/mens%20clothing' 
+        || $route.path == '/products/women%20clothing' 
+        || $route.path == '/products/electronics'
+        ?   'd-none' : ''"
+        >mdi-store</v-icon>
 
         <v-icon
         class="filter-icon"
