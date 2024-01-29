@@ -86,7 +86,7 @@
        <v-list class="mt-10">
         <v-list-item>
           <v-avatar size="60">
-            <img src="../assets/task.PNG" alt="" class="w-100">
+            <img src="../assets/task.png" alt="" class="w-100">
           </v-avatar>
           <span class="font-weight-bold text-indigo-darken-4 pl-3">Egy-Techno Task</span>
         </v-list-item>
