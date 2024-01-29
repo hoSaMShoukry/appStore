@@ -10,7 +10,7 @@
       <v-col class="text-center" xl="3" lg="3" md="3" sm="6" cols="12">
       <v-btn class="btns" variant="text"> Egy-TechnoTask</v-btn>
        <v-avatar class="ml-3">
-        <img src="../assets/task.PNG" class="w-100" alt="">
+        <img src="../assets/task.png" class="w-100" alt="">
        </v-avatar>
       </v-col>
     </v-row>
