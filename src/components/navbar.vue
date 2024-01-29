@@ -6,7 +6,7 @@
           <v-icon class="pl-3">mdi-home</v-icon>
         </v-btn>
         <v-avatar class="ml-3" width="300">
-          <img class="w-100" src="../assets/task.PNG" alt="">
+          <img class="w-100" src="../assets/task.png" alt="">
         </v-avatar>
         <v-spacer></v-spacer>
         <span class="mr-5 card-icon" @click="$router.push('/card')">
